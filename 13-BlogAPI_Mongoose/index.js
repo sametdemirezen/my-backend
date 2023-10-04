@@ -24,6 +24,7 @@ app.all('/', (req, res) => {
 
 // continue from here...
 
+require('./src/dbConnection')
 /* ------------------------------------------------------- */
 
 app.use(require('./src/errorHandler'))

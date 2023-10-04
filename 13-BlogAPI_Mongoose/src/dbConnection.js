@@ -4,6 +4,6 @@
 ------------------------------------------------------- */
 
 const mongoose = require('mongoose')
-mongoose.connect(process.env.MONGODB || 'mongodb://localhost:27017')
+mongoose.connect(process.env.MONGODB /* || 'mongodb://localhost:27017' */)
     .then(() => console.log('db connected'))
-    .catch(() => console.log('db not connected', err))
+    .catch((err) => console.log('db not connected', err))
